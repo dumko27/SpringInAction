@@ -13,5 +13,8 @@ public class Main {
         
         Perfomer perfomer = (Perfomer) ctx.getBean("duke");
         perfomer.perform();
+        
+        PoeticJuggler poeticJuggler = (PoeticJuggler) ctx.getBean("poeticDuke");
+        poeticJuggler.perform();
     }
 }

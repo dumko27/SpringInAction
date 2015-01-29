@@ -5,4 +5,11 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 ">
     <bean id="duke" class="com.springinaction.springidol.Juggler"/>
+    
+    <bean id="sonnet29" class="com.springinaction.springidol.Sonnet29" />
+    
+    <bean id="poeticDuke" class="com.springinaction.springidol.PoeticJuggler">
+        <constructor-arg value="15" />
+        <constructor-arg ref="sonnet29"/> 
+    </bean>
 </beans>
